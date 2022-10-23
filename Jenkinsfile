@@ -32,8 +32,8 @@ node ('rhel7-app-agent'){
     stage('Pull-image-server') {
         sh 'echo Pull-image-serve'
     
-         sh "docker-compose down"
-         sh "docker-compose up -d"
+         sh "docker compose down"
+         sh "docker compose up -d"
       }
     
     stage('DAST')
