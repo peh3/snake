@@ -1,7 +1,7 @@
 version: '2'
 services:
   snake:
-    image: 'peh3/peh'
+    image: 'amrit96/snake'
     environment:
       - "PORT:3000"
     ports:
