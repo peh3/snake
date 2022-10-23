@@ -6,7 +6,7 @@ node ('rhel7-app-agent'){
     }  
     stage('SAST'){
         sh 'echo SAST'
-        build 'SECURITY-SAST-SNYK'
+        //build 'SECURITY-SAST-SNYK'
     }
 
     
