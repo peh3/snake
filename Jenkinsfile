@@ -14,8 +14,8 @@ node ('rhel7-app-agent'){
     /* This builds the actual image; synonymous to
          * docker build on the command line */
         sh 'echo Build-and-Tag'
-        //app = docker.build("peh3/peh")
-        app = docker.build("amrit96/snake")
+        app = docker.build("peh3/peh")
+        //app = docker.build("amrit96/snake")
     }
     stage('Post-to-dockerhub') {
         sh 'echo Post-to-dockerhub'
