@@ -1,6 +1,6 @@
  /* app-agent on RHEL or Ubuntu*/ 
-node ('rhel7-app-agent'){  
-//node ('ubuntu-app-agent'){      
+//node ('rhel7-app-agent'){  
+node ('ubuntu-app-agent'){      
     def app
     stage('Cloning Git') {
         /* Let's make sure we have the repository cloned to our workspace */
