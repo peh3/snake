@@ -5,7 +5,7 @@ const sonarqubeScanner = require('sonarqube-scanner');
        options : {
        'sonar.sources': '.',
        'sonar.projectName': 'sonar-project',
-       'sonar.projectDescription': 'Description for "My App" project...',
+       'sonar.projectDescription': 'Description for "My App" project...'
        //'sonar.sources': 'src',
        //'sonar.tests': 'specs'
        }
