@@ -1,3 +1,4 @@
+ /* app-agent on RHEL or Ubuntu*/ 
 //node ('rhel7-app-agent'){  
 node ('ubuntu-app-agent'){      
     def app
