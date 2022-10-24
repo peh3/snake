@@ -34,13 +34,11 @@ node ('ubuntu-app-agent'){
     stage('Pull-image-server') {
         sh 'echo Pull-image-serve'
 
-         /* docker-compose on Ubuntu*/ 
-         sh "docker-compose down"
-         sh "docker-compose up -d"	
+         //sh "docker-compose down"
+         //sh "docker-compose up -d"	
          
-         /* docker compose on RHEL*/ 
-         //sh "docker compose down"
-         //sh "docker compose up -d"
+         sh "docker compose down"
+         sh "docker compose up -d"
       }
     
     stage('DAST')
