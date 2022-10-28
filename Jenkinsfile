@@ -9,6 +9,7 @@ node ('ubuntu-app-agent3'){
     stage('SAST'){
         sh 'echo SAST'
         //build 'SECURITY-SAST-SNYK'
+        build 'Security-SAST-SonarQube'
     }
 
     
@@ -28,6 +29,7 @@ node ('ubuntu-app-agent3'){
     stage('SECURITY-IMAGE-SCANNER'){
         sh 'echo SECURITY-IMAGE-SCANNER'
         //build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
+        build 'Security-Image-Scanner-Anchore'
     }
   
     
@@ -45,6 +47,7 @@ node ('ubuntu-app-agent3'){
         {
         sh 'echo DAST'
         //build 'SECURITY-DAST-OWASP_ZAP'
+         build 'Security-DAST-arachni'
         }
  
 }
